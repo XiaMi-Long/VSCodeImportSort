@@ -1,7 +1,7 @@
 {
   "name": "import-sort",
-  "displayName": "Import Sort",
-  "description": "对选中文本进行字符长度排序",
+  "displayName": "ES6 Import Sort",
+  "description": "对 ES6 的 import 行进行字符长度排序",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.94.0"
@@ -14,8 +14,20 @@
   "contributes": {
     "commands": [
       {
-        "command": "import-sort.helloWorld",
-        "title": "Hello World"
+        "command": "import-sort.desc-sort-import",
+        "title": "import-sort(降序)"
+      },
+      {
+        "command": "import-sort.asc-Sort-import",
+        "title": "import-sort(升序)"
+      },
+      {
+        "command": "import-sort.desc-sort-common",
+        "title": "common-sort(降序)"
+      },
+      {
+        "command": "import-sort.asc-Sort-common",
+        "title": "common-sort(升序)"
       }
     ]
   },
