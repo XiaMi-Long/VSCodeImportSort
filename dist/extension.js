@@ -45,7 +45,7 @@ function activate(context) {
             });
         }
     });
-    const importAsc = vscode.commands.registerCommand('import-sort.asc-Sort-import', () => {
+    const importAsc = vscode.commands.registerCommand('import-sort.asc-sort-import', () => {
         const editor = vscode.window.activeTextEditor;
         if (editor) {
             const selection = editor.selection;
@@ -67,7 +67,7 @@ function activate(context) {
             });
         }
     });
-    const commonAsc = vscode.commands.registerCommand('import-sort.asc-Sort-common', () => {
+    const commonAsc = vscode.commands.registerCommand('import-sort.asc-sort-common', () => {
         const editor = vscode.window.activeTextEditor;
         if (editor) {
             const selection = editor.selection;

@@ -3,11 +3,24 @@
   "displayName": "ES6 Import Sort",
   "description": "对 ES6 的 import 行进行字符长度排序",
   "version": "0.0.1",
+  "icon": "./icon/logo.png",
   "engines": {
-    "vscode": "^1.94.0"
+    "vscode": "^1.80.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XiaMi-Long/VSCodeImportSort"
+  },
+  "publisher": "wwy",
   "categories": [
     "Other"
+  ],
+  "keywords": [
+    "ES6 Import Sort",
+    "ES6",
+    "Import",
+    "Sort",
+    "String Sort"
   ],
   "activationEvents": [],
   "main": "./dist/extension.js",
@@ -18,7 +31,7 @@
         "title": "import-sort(降序)"
       },
       {
-        "command": "import-sort.asc-Sort-import",
+        "command": "import-sort.asc-sort-import",
         "title": "import-sort(升序)"
       },
       {
@@ -26,7 +39,7 @@
         "title": "common-sort(降序)"
       },
       {
-        "command": "import-sort.asc-Sort-common",
+        "command": "import-sort.asc-sort-common",
         "title": "common-sort(升序)"
       }
     ]
