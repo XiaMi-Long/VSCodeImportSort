@@ -1,3 +1,4 @@
+import os from 'os'
 class ImportSort {
     private static importRegex: RegExp = /import\s+[\s\S]+?\s+from\s+['"][^'"]+['"]\s*;?\r?\n?/g
 
@@ -42,18 +43,25 @@ class ImportSort {
         switch (ImportSort.regexType) {
             case 'common':
                 imports = words.split(ImportSort.regex)
-                imports = imports.map((item) => {
-                    return item + '\r\n'
-                })
+                imports = imports
+                    .filter((item) => item.length > 0)
+                    .map((item) => {
+                        return item + '\r\n'
+                    })
                 break
             case 'import':
-                imports = words.match(ImportSort.regex)
+                imports = words.match(ImportSort.regex)?.map((item) => {
+                    const lastLengthStr = item[item.length - 1]
+                    return lastLengthStr === '\n' || lastLengthStr === '\r' ? item : item + os.EOL
+                })
                 break
         }
 
         if (imports) {
             ImportSort.imports = imports
         }
+        console.log(JSON.stringify(os.EOL))
+
         return ImportSort
     }
 

@@ -14,7 +14,7 @@ vsc-extension-quickstart.md
 .history/**
 
 
-image/**
+images/**
 pnpm-lock.yaml
 package.json
 eslint.config.mjs
