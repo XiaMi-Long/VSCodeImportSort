@@ -3,6 +3,7 @@ class ImportSort {
     private static importRegex: RegExp = /import\s+[\s\S]+?\s+from\s+['"][^'"]+['"]\s*;?\r?\n?/g
 
     private static commonRegex: RegExp = /\r?\n/g
+
     private static regex: any = null
 
     private static regexType: 'import' | 'common' | '' = ''

@@ -41,6 +41,10 @@
       {
         "command": "import-sort.asc-sort-common",
         "title": "common-sort-asc(升序)"
+      },
+      {
+        "command": "import-sort.sort-demo",
+        "title": "sort-demo(降序)"
       }
     ]
   },
